@@ -19,16 +19,38 @@
   main {
     flex-grow: 1;
     display: flex;
-    // background: #014d0e;
-    background: #7bc588;
-    > div {
-      flex-basis: 50%;
-      border-right: 2px solid rgba(0, 0, 0, .2);
-      box-shadow: 0 0 20px rgba(0, 0, 0, .14) inset;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+    flex-direction: column;
+    // background: #014d0e; // Dark green
+    // background: #7bc588; // Light green
+    background: white;
+    color: #333; // Dark green
+    // text-shadow: none;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+    padding: 3% 0;
   }
+}
+
+.Row {
+  border-right: 2px solid rgba(0, 0, 0, .2);
+  // box-shadow: 0 0 20px rgba(0, 0, 0, .14) inset;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 0;
+}
+
+.Dial {
+  width: 17%;
+  margin-right: 4%;
+  text-align: center;
+  h3 {
+    margin: .4em;
+    font-weight: 400;
+  }
+}
+
+.Chart {
+  width: 66%;
 }
